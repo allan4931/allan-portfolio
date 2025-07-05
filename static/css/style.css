@@ -1,0 +1,72 @@
+
+:root {
+  --primary: #ff6600;
+  --primary-dark: #e65c00;
+  --dark: #212529;
+  --light: #f8f9fa;
+  --white: #ffffff;
+  --gray: #e9ecef;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: var(--light);
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+/* Header with gradient overlay */
+header {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('/static/images/hero-banner.jpg') center/cover no-repeat;
+  color: var(--white);
+  padding: 8rem 1rem;
+  text-align: center;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+}
+
+/* Modern card styling */
+.card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+/* Primary buttons */
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  padding: 0.6rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+/* Section spacing */
+section {
+  padding: 5rem 0;
+}
+
+/* Skill badges */
+.skill-badge {
+  background-color: rgba(255, 102, 0, 0.1);
+  color: var(--primary);
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  display: inline-block;
+  margin: 0.25rem;
+}
